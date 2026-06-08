@@ -1,0 +1,39 @@
+# Import built-in modules
+import math
+import random
+from datetime import datetime
+
+# Function with arguments and return value
+def calculate_square_root(number):
+    return math.sqrt(number)
+
+# Function with arguments and return value
+def calculate_power(base, exponent):
+    return math.pow(base, exponent)
+
+# Function using random module
+def generate_random_number(start, end):
+    return random.randint(start, end)
+
+# Function using datetime module
+def get_current_date_time():
+    return datetime.now()
+
+# Main Program
+num = 25
+
+# Using math module
+sqrt_result = calculate_square_root(num)
+power_result = calculate_power(5, 3)
+
+# Using random module
+random_num = generate_random_number(1, 100)
+
+# Using datetime module
+current_time = get_current_date_time()
+
+# Display Results
+print("Square Root of", num, "=", sqrt_result)
+print("5 raised to the power 3 =", power_result)
+print("Random Number =", random_num)
+print("Current Date and Time =", current_time)
