@@ -1,39 +1,40 @@
-# Import built-in modules
-import math
-import random
-from datetime import datetime
+# User Input Handling
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
 
-# Function with arguments and return value
-def calculate_square_root(number):
-    return math.sqrt(number)
+# Variables and Data Types
+college = "ABC College"    # String
+cgpa = 8.5                # Float
+is_student = True         # Boolean
 
-# Function with arguments and return value
-def calculate_power(base, exponent):
-    return math.pow(base, exponent)
+# Operators
+next_age = age + 1
 
-# Function using random module
-def generate_random_number(start, end):
-    return random.randint(start, end)
+# Conditional Statements
+if age >= 18:
+    status = "Eligible to Vote"
+else:
+    status = "Not Eligible to Vote"
 
-# Function using datetime module
-def get_current_date_time():
-    return datetime.now()
+# Output
+print("\n--- Student Details ---")
+print("Name:", name)
+print("Age:", age)
+print("College:", college)
+print("CGPA:", cgpa)
+print("Student:", is_student)
+print("Next Year Age:", next_age)
+print("Voting Status:", status)
 
-# Main Program
-num = 25
+# Loops
+print("\nNumbers from 1 to 5:")
+for i in range(1, 6):
+    print(i)
 
-# Using math module
-sqrt_result = calculate_square_root(num)
-power_result = calculate_power(5, 3)
+print("\nCountdown:")
+count = 5
+while count > 0:
+    print(count)
+    count -= 1
 
-# Using random module
-random_num = generate_random_number(1, 100)
-
-# Using datetime module
-current_time = get_current_date_time()
-
-# Display Results
-print("Square Root of", num, "=", sqrt_result)
-print("5 raised to the power 3 =", power_result)
-print("Random Number =", random_num)
-print("Current Date and Time =", current_time)
+print("Program Completed!")
